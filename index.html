@@ -1,32 +1,47 @@
 <html class="text-gray-900 antialiased leading-tight">
     <head>
-        <title>CourseLit CMS - Launch Your Own Course Site And Earn Revenue</title>
+        <title>CourseLit - Launch Your Own Online Teaching Platform And Earn Revenue</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description" CONTENT="CourseLit is a content management system for educators, teachers and all creative people who like to teach.">
         <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/png" href="./assets/icon.png">
     </head>
     <body class="min-h-screen bg-white">
-        <nav class="bg-indigo-900 p-8 text-white">
+        <nav class="bg-indigo-900 p-4 text-white">
             <div class="container mx-auto flex items-center justify-between flex-wrap">
-                <a href="/" class="font-semibold text-xl mr-2">CourseLit CMS</a>
-                <a href="#getstarted" class="text-teal-200 hover:text-white px-2 py-1 border rounded">Get Started</a>
+                <span class="flex items-center mb-4 lg:mb-0">
+                    <img src="assets/icon.png" alt="CourseLit logo" class="h-12 mr-4 border">
+                    <a href="/" class="font-semibold text-xl mr-2">CourseLit</a>
+                </span>
+                <span>
+                    <a href="#getstarted" class="text-teal-200 hover:text-white mr-4 hidden lg:inline">Get Started</a>
+                    <a href="https://codelit.gitbook.io/courselit" class="text-teal-200 hover:text-white mr-4" target="_blank">Documentation</a>
+                    <a href="https://spectrum.chat/courselit" class="text-teal-200 hover:text-white mr-4" target="_blank">Community</a>
+                    <a href="https://github.com/codelit/courselit" class="text-teal-200 hover:text-white" target="_blank">GitHub</a>
+                </span>
             </div>
         </nav>
-        <div class="bg-indigo-800 py-48">
+        <div class="bg-indigo-800">
             <div class="container mx-auto px-8">
-                <div class="flex items-center justify-between">
+                <div class="flex flex-col flex-initial py-8 lg:hidden text-center">
+                    <p class="font-semibold text-2xl md:text-4xl text-white mb-12">Launch your own online teaching platform without the hassle.</p>
+                    <img class="rounded-md border mb-12" src="assets/screenshot.png">
+                    <p class="text-xl text-indigo-200 text-justify mb-8">CourseLit comes pre-equipped with all the tools you need to start your online coaching career.</p>
+                    <a href="#getstarted" class="py-4 px-2 bg-green-500 rounded text-white font-bold text-xl">Get started</a>
+                </div>
+                <div class="flex items-center justify-between py-48 hidden lg:block">
                     <div class="flex flex-col mr-16 flex-initial">
-                        <p class="font-semibold text-6xl text-white mb-4">Launch your own course website without any hassle.</p>
+                        <p class="font-semibold text-2xl text-white mb-4 sm:text-6xl">Launch your own online teaching platform without the hassle.</p>
                         <p class="text-xl text-indigo-200">CourseLit comes pre-equipped with all the tools you need to start your online coaching career.</p>
                     </div>
                     <div>
-                        <img class="rounded-md border" src="assets/screenshot.png">
+                        <img class="rounded-md border" src="./assets/screenshot.png">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-12 px-8">
-            <h1 class="text-xl mb-8 font-bold text-gray-700">Features</h1>
+        <div class="container mx-auto py-8 px-8">
+            <h1 class="text-xl mb-12 font-bold text-gray-700 text-center">FEATURE</h1>
             <div class="flex flex-wrap mb-8">
                 <div class="w-full sm:w-1/3 mb-8">
                     <h3 class="text-2xl font-bold mb-2">Build Courses</h3>
@@ -45,13 +60,13 @@
                     <p class="text-gray-700">You don't need a separate system to publish tutorials and blog posts. Using CourseLit, you can create post right from its dashboard.</p>
                 </div>
             </div>
-            <div class=>
-                <p class="font-semibold text-gray-600">Need more features? Contact us at <a class="underline" href="mailto:codelit.dev@gmail.com">codelit.dev@gmail.com</a>.</p>
+            <div class="">
+                <p class="font-semibold text-gray-600">Need more features? Come chat with us in our <a class="underline" href="mailto:codelit.dev@gmail.com">official Spectrum group</a>.</p>
             </div>
         </div>
-        <div class="bg-indigo-800 py-12">
-            <div class="container mx-auto px-8" id="getstarted">
-                <h1 class="text-xl mb-8 font-bold text-white">Get started</h1>
+        <div class="bg-indigo-800">
+            <div class="container mx-auto py-16 px-8" id="getstarted">
+                <h1 class="text-xl mb-12 font-bold text-white text-center">GET STARTED</h1>
                 <p class="text-indigo-200 mb-16">CourseLit is freely available as a open source software. You can either set it up yourself or ask us to host it on your behalf. <span class="font-semibold text-white">Choose an appropriate option from below to begin.</span></p>
                 <div class="flex flex-wrap justify-between">
                     <div class="w-full sm:w-1/2 flex flex-col items-center border rounded p-4 border-indigo-400">
@@ -70,21 +85,22 @@
                 <div class="flex justify-between items-center">
                     <div>
                         <h4 class="text-lg font-semibold mb-4 text-white">Contact</h4>
-                        <p class="mb-1"><span class="font-semibold">Email:</span> codelit.dev@gmail.com</p>
-                        <p><span class="font-semibold">Sales:</span>: +91-8587010008</p>
+                        <p class="mb-1"><span class="font-semibold">Email:</span> <a href="mailto:codelit.dev@gmail.com">codelit.dev@gmail.com</a></p>
+                        <p class="mb-1"><span class="font-semibold">Sales:</span>: +91-8587010008</p>
+                        <p><span class="font-semibold">Chat:</span>: <a href="https://spectrum.chat/courselit">Spectrum</a></p>
                     </div>
                 </div>
                 <div class="flex justify-between items-center">
                     <div>
                         <h4 class="text-lg font-semibold mb-4 text-white">Social</h4>
                         <p class="mb-1">
-                            <a href="https://www.facebook.com/courselit">Facebook</a>
+                            <a href="https://twitter.com/CodeLit2">Twitter</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="flex justify-center py-8">
-                <p class="text-sm">Copyright 2020 Rajat Saxena. All rights reserved.</p>
+                <p class="text-sm">Copyright 2020 <a href="https://codelit.dev">CodeLit</a>. All rights reserved.</p>
             </div>
         </div>
     </body>
