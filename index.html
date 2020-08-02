@@ -21,10 +21,10 @@
                 </span>
             </div>
         </nav>
-        <div class="bg-indigo-800">
-            <div class="container mx-auto px-8">
+        <div class="bg-indigo-800 p-4">
+            <div class="container mx-auto">
                 <div class="flex flex-col flex-initial py-8 lg:hidden text-center">
-                    <p class="font-semibold text-2xl md:text-4xl text-white mb-12">Launch your own online teaching platform without the hassle.</p>
+                    <p class="font-semibold text-2xl md:text-4xl text-white mb-12">Launch your own online teaching platform effortlessly.</p>
                     <img class="rounded-md border mb-12" src="assets/screenshot.png">
                     <p class="text-xl text-indigo-200 text-justify mb-8">CourseLit comes pre-equipped with all the tools you need to start your online coaching career.</p>
                     <a href="#getstarted" class="py-4 px-2 bg-green-500 rounded text-white font-bold text-xl">Get started</a>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-8 px-8">
+        <div class="container mx-auto py-16 px-4">
             <h1 class="text-3xl mb-12 font-bold text-gray-700 text-center">FEATURES</h1>
             <div class="lg:block hidden">
                 <div class="flex items-center mb-32">
@@ -121,24 +121,27 @@
             </div>
         </div>
         <div class="bg-indigo-800">
-            <div class="container mx-auto py-16 px-8" id="getstarted">
+            <div class="container mx-auto py-16 px-4" id="getstarted">
                 <h1 class="text-3xl mb-12 font-bold text-white text-center">GET STARTED</h1>
-                <p class="text-indigo-200 mb-16">CourseLit is freely available as a open source software. You can either set it up yourself or ask us to host it on your behalf. <span class="font-semibold text-white">Choose an appropriate option from below to begin.</span></p>
-                <div class="flex flex-wrap justify-between">
-                    <div class="w-full sm:w-1/2 flex flex-col items-center border rounded p-4 border-indigo-400">
-                        <h2 class="text-2xl text-white mb-16">I will host it myself.</h2>
-                        <button class="text-teal-200 hover:text-white px-2 py-1 border rounded mb-16">show intructions</button>
-                    </div>
-                    <div class="w-full sm:w-1/2 flex flex-col items-center border rounded p-4">
-                        <h2 class="text-2xl text-white mb-16">Host it for me.</h2>
-                        <button class="text-teal-200 hover:text-white px-2 py-1 border rounded mb-16">show intructions</button>
-                    </div>
+                <p class="text-xl text-indigo-200 mb-16">CourseLit is freely available as an open source software. You can either set it up yourself or ask us to host it on your behalf. <span class="font-semibold text-white">Choose an appropriate option from below to begin.</span></p>
+                <div class="flex flex-wrap justify-evenly mb-16">
+                    <button class="w-full sm:w-1/3 bg-white rounded py-8 hover:bg-blue-900 hover:text-white mb-4" onclick="revealHostMyself()">I will host it myself.</button>
+                    <button class="w-full sm:w-1/3 bg-white rounded py-8 hover:bg-blue-900 hover:text-white mb-4" onclick="revealHostItForMe()">Host it for me.</button>
+                </div>
+                <div id="host-myself-section" class="text-white hidden">
+                    <h2 class="text-4xl text-white mb-4"># Instructions</h2>
+                    <p class="mb-2 text-xl">1. Head over to <a href="https://codelit.gitbook.io/courselit/getting-started" target="_blank" class="underline">our official guide</a>.</p>
+                    <p class="text-xl">2. Follow the instructions.</p>
+                </div>
+                <div id="host-for-me-section" class="text-white hidden">
+                    <h2 class="text-4xl text-white mb-4"># Instructions</h2>
+                    <p class="text-xl">Please contact us in our official <a href="https://discord.gg/GR4bQsN" target="_blank" class="underline">Discord channel</a>.</p>
                 </div>
             </div>
         </div>
         <div class="bg-indigo-900 text-indigo-300">
-            <div class="container mx-auto flex flex-wrap justify-between py-12 px-8">
-                <div class="flex justify-between items-center">
+            <div class="container mx-auto flex flex-wrap justify-between py-12 px-4">
+                <div class="flex justify-between mb-4">
                     <div>
                         <h4 class="text-lg font-semibold mb-4 text-white">Contact</h4>
                         <p class="mb-1"><span class="font-semibold">Email:</span> <a href="mailto:codelit.dev@gmail.com">codelit.dev@gmail.com</a></p>
@@ -146,7 +149,7 @@
                         <p><span class="font-semibold">Chat:</span>: <a href="https://spectrum.chat/courselit">Spectrum</a></p>
                     </div>
                 </div>
-                <div class="flex justify-between items-center">
+                <div class="flex justify-between">
                     <div>
                         <h4 class="text-lg font-semibold mb-4 text-white">Social</h4>
                         <p class="mb-1">
@@ -159,5 +162,22 @@
                 <p class="text-sm">Copyright 2020 <a href="https://codelit.dev">CodeLit</a>. All rights reserved.</p>
             </div>
         </div>
+        <script type="text/javascript">
+            function revealHostMyself() {
+                const hostMyselfSection = document.getElementById("host-myself-section");
+                const hostForMeSection = document.getElementById("host-for-me-section");
+
+                hostMyselfSection.style.display = 'block';
+                hostForMeSection.style.display = 'none';
+            }
+
+            function revealHostItForMe() {
+                const hostMyselfSection = document.getElementById("host-myself-section");
+                const hostForMeSection = document.getElementById("host-for-me-section");
+
+                hostMyselfSection.style.display = 'none';
+                hostForMeSection.style.display = 'block';
+            }
+        </script>
     </body>
 </html>
